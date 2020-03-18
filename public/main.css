@@ -1,0 +1,35 @@
+/* Accordion */
+.accordion {
+  padding: 15px;
+}
+.accordion .accordion__header {
+  padding: 0 15px;
+  background: #333;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.accordion .accordion__header:hover {
+  background: #666;
+  border: 1px solid #3333;
+}
+.accordion .accordion__title {
+    pointer-events: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+.accordion .accordion__content {
+  padding: 15px;
+  background: #f5f5f5;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  display: none;
+}
+.accordion .accordion__content.accordion--open {
+  display: block;
+}
+.accordion .accordion__content:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
